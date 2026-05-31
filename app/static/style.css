@@ -1,0 +1,21 @@
+body {
+    background: #f4f6f8;
+}
+
+.login-card {
+    max-width: 420px;
+    margin: 80px auto;
+}
+
+.page-header {
+    margin-bottom: 24px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.table {
+    background: white;
+}

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="page-header">
+    <h1 class="h3">Admin Panel</h1>
+    <p class="text-muted">Technical administration interface.</p>
+</div>
+
+<div class="card">
+    <div class="card-body">
+
+        <h2 class="h5">System Information</h2>
+
+        <p><strong>Application:</strong> FinTech-HR-Powertool</p>
+        <p><strong>Database:</strong> SQLite</p>
+        <p><strong>Environment:</strong> Production</p>
+
+        <hr>
+
+        <h2 class="h5">Maintenance Notes</h2>
+
+        <p class="mb-1">
+            Regular HR database exports are created by the backend server.
+        </p>
+
+        <p class="text-muted small mb-0">
+            Latest export: {{ backup_file }}
+        </p>
+
+    </div>
+</div>
+{% endblock %}

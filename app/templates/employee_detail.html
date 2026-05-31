@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="page-header d-flex justify-content-between align-items-center">
+    <div>
+        <h1 class="h3">
+            {{ employee.first_name }} {{ employee.last_name }}
+        </h1>
+        <p class="text-muted">{{ employee.position }} - {{ employee.department }}</p>
+    </div>
+    <a class="btn btn-outline-secondary" href="/employees">Back</a>
+</div>
+
+<div class="card">
+    <div class="card-body">
+
+        <p><strong>Email:</strong> {{ employee.email }}</p>
+
+        {% if employee.phone %}
+        <p><strong>Phone:</strong> {{ employee.phone }}</p>
+        {% endif %}
+
+        <p><strong>University:</strong> {{ employee.university }}</p>
+
+        <p><strong>Salary:</strong> € {{ employee.salary }}</p>
+
+    </div>
+</div>
+{% endblock %}
